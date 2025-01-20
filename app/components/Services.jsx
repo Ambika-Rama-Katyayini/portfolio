@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import { assets } from '@/assets/assets'
+import { assets, serviceData } from '@/assets/assets'
 
 const Services = () => {
     return (
