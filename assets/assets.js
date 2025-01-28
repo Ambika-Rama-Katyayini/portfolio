@@ -1,7 +1,7 @@
 // import user_image from './user-image.png';
-// import user_image from "./girl3.png";
+import user_image from "./girl3.png";
 // import user_image from "./girl2.png";
-import user_image from "./laptop.png"; 
+// import user_image from "./laptop.png"; 
 
 
 // import user_image from "./Untitled design.png";
