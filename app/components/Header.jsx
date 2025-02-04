@@ -79,7 +79,7 @@ const Header = ({ isDarkMode }) => {
                 initial={{ y: -30, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.8, delay: 0.5 }}
-                className="text-center text-gradient-to-r from-green-300 via-yellow-400 to-green-300 text-3xl sm:text-5xl lg:text-[66px] font-Ovo mb-6 dark:text-yellow-400">
+                className="text-center bg-gradient-to-br from-[#56671a] to-[#7a9a06] bg-clip-text text-transparent text-3xl sm:text-5xl lg:text-[66px] font-Ovo mb-6 dark:text-yellow-500">
                 Frontend Web Developer based in India.
             </motion.h1>
             <motion.p
@@ -92,26 +92,26 @@ const Header = ({ isDarkMode }) => {
             <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
                 <a
                     href="#contact"
-                    className="px-10 py-3 border-2 border-white/20 rounded-full  text-white bg-black flex items-center gap-3 transition duration-300 dark:bg-transparent"
+                    className="px-10 py-3 rounded-full text-white bg-gray-700 flex items-center gap-3 transition duration-300 dark:hover:bg-darkHover"
                 >
                     Contact Me
                     <Image
                         src={assets.right_arrow_white}
                         alt="Right Arrow"
-                        className="w-4 animate-pulse"
+                        className="w-3 animate-pulse"
                     />
                 </a>
 
                 <a
                     href="/Student Athlete Resume.pdf"
                     download
-                    className="px-10 py-3 border-2 rounded-full hover:bg-white hover:text-black flex items-center gap-2 transition duration-300 bg-white dark:text-black"
+                    className="px-10 py-3 border-2 rounded-full dark:border-none hover:bg-white hover:text-black flex items-center gap-2 transition duration-300 bg-white dark:text-black dark:hover:bg-darkHover dark:hover:text-white"
                 >
                     My Resume
                     <Image
                         src={assets.download_icon}
                         alt="Download Icon"
-                        className="w-4 animate-bounce"
+                        className="w-3 animate-bounce"
                     />
                 </a>
             </div>

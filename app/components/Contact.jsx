@@ -62,7 +62,7 @@ const Contact = () => {
           required>
         </textarea>
         <button
-          className='py-3 px-8 w-max flex items-center justify-between gap-2 text-white bg-black rounded-full mx-auto hover:bg-black duration-500 dark:bg-transparent dark:border-[0.5px] dark:hover:bg-darkHover'
+          className='py-3 px-8 w-max flex items-center justify-between gap-2 text-white bg-black rounded-full mx-auto duration-500 dark:bg-transparent dark:border-[0.5px] dark:hover:bg-darkHover'
           type='submit'>Submit Now
           <Image src={assets.right_arrow_white}
             alt='Contact right arrow icon'
