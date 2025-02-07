@@ -90,7 +90,10 @@ const Header = ({ isDarkMode }) => {
                 I'm a frontend developer from Konaseema, Andhra with 3 years of experience in multiple companies like Lumidad, MediCardia, and freelancing.
             </motion.p>
             <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
-                <a
+                <motion.a
+                    initial={{ y: 30, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{ duration: 0.6, delay: 1 }}
                     href="#contact"
                     className="px-10 py-3 rounded-full text-white bg-gray-700 flex items-center gap-3 transition duration-300 dark:hover:bg-darkHover"
                 >
@@ -100,9 +103,12 @@ const Header = ({ isDarkMode }) => {
                         alt="Right Arrow"
                         className="w-3 animate-pulse"
                     />
-                </a>
+                </motion.a>
 
-                <a
+                <motion.a
+                    initial={{ y: 30, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{ duration: 0.6, delay: 1.2 }}
                     href="/Student Athlete Resume.pdf"
                     download
                     className="px-10 py-3 border-2 rounded-full dark:border-none hover:bg-white hover:text-black flex items-center gap-2 transition duration-300 bg-white dark:text-black dark:hover:bg-darkHover dark:hover:text-white"
@@ -113,7 +119,7 @@ const Header = ({ isDarkMode }) => {
                         alt="Download Icon"
                         className="w-3 animate-bounce"
                     />
-                </a>
+                </motion.a>
             </div>
         </div>
     );
